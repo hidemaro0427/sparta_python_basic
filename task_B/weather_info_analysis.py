@@ -22,7 +22,8 @@ def main():
     toral = 0
     for deta in range(len(weather_information)):
         toral += weather_information[deta]['temperature']
-    print(toral / len(weather_information))
+    average_temperature = toral / len(weather_information)
+    print(average_temperature)
 
 if __name__ == '__main__':
     main()
