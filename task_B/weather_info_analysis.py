@@ -25,5 +25,11 @@ def main():
     average_temperature = toral / len(weather_information)
     print(average_temperature)
 
+    osaka = []
+    for deta in weather_information:
+        if deta['prefecture'] == "大阪府":
+            osaka.append(deta['station'])
+    print(','.join(osaka))
+
 if __name__ == '__main__':
     main()
