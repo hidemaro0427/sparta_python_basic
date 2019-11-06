@@ -11,6 +11,13 @@ def maximum(numbers):
             max = number
     return max
 
+def minimum(numbers):
+    mini = numbers[0]
+    for number in numbers:
+        if mini > number:
+            mini = number
+    return mini
+
 numbers = input("データを入力してください(スペース区切り) >")
 list = []
 for number in numbers.split(" "):
@@ -18,3 +25,4 @@ for number in numbers.split(" "):
 
 print(sum_value(list))
 print(maximum(list))
+print(minimum(list))
