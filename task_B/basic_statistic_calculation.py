@@ -5,7 +5,7 @@ def sum_value(numbers):
     return total
 
 def maximum(numbers):
-    max = numbers[0]
+    max = 0
     for number in numbers:
         if max < number:
             max = number
