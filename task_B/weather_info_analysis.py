@@ -31,5 +31,12 @@ def main():
             osaka.append(deta['station'])
     print(','.join(osaka))
 
+    hukuoka = []
+    for deta in weather_information:
+        if deta['prefecture'] == "福岡県":
+            hukuoka.append(deta['temperature'])
+    hukuoka_average_temperature = sum(hukuoka) / len(hukuoka)
+    print(hukuoka_average_temperature)
+
 if __name__ == '__main__':
     main()
